@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150128234412) do
+ActiveRecord::Schema.define(version: 20150129223129) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "alunos", force: true do |t|
+    t.string   "nome"
+    t.string   "matricula"
+    t.string   "turma"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clientes", force: true do |t|
     t.string   "nome"
