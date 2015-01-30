@@ -1,0 +1,20 @@
+p#notice = notice
+
+p
+  strong Turno:
+  = @turma.turno
+p
+  strong Sala:
+  = @turma.sala
+p
+  strong Matéria:
+  = @turma.materia
+p
+  strong Professor:
+  = @turma.professor
+p
+
+
+= link_to 'Alterar', edit_turma_path(@turma)
+'|
+= link_to 'Voltar', turmas_path

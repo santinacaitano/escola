@@ -1,0 +1,27 @@
+h1 Listing turmas
+
+table
+  thead
+    tr
+      th Turno
+      th Sala
+      th Matéria
+      th Professor
+      th
+      th
+      th
+
+  tbody
+    - @turmas.each do |turma|
+      tr
+        td = turma.turno
+        td = turma.sala
+        td = turma.materia
+        td = turma.professor
+        td = link_to 'Show', turma
+        td = link_to 'Edit', edit_turma_path(turma)
+        td = link_to 'Destroy', turma, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'Nova Turma', new_turma_path

@@ -1,0 +1,11 @@
+= simple_form_for(@turma) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :turno
+    = f.input :sala
+    = f.input :materia
+    = f.input :professor
+
+  .form-actions
+    = f.button :submit

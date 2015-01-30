@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Nome:
+  = @aluno.nome
+p
+  strong Matricula:
+  = @aluno.matricula
+p
+  strong Turma:
+  = @aluno.turma
+
+= link_to 'Edit', edit_aluno_path(@aluno)
+'|
+= link_to 'Back', alunos_path

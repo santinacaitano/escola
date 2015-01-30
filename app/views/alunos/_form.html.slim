@@ -1,0 +1,10 @@
+= simple_form_for(@aluno) do |f|
+  =f.error_notification
+
+  .form-inputs
+    = f.input :nome
+    = f.input :matricula
+    = f.input :turma
+
+  .form-actions 
+    =f.button :submit
