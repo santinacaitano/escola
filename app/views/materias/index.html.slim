@@ -1,0 +1,25 @@
+h1 Matérias
+
+table
+  thead
+    tr
+      th Descrição
+      th Professor
+      th Curso
+      th
+      th
+      th
+
+  tbody
+    - @materias.each do |materia|
+      tr
+        td = materia.descricao
+        td = materia.professor
+        td = materia.curso
+        td = link_to 'Show', materia
+        td = link_to 'Edit', edit_materia_path(materia)
+        td = link_to 'Destroy', materia, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'Nova Matéria', new_materia_path

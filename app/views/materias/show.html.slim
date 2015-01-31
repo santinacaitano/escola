@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Descrição:
+  = @materia.descricao
+p
+  strong Professor:
+  = @materia.professor
+p
+  strong Curso:
+  = @materia.curso
+p
+
+
+
+= link_to 'Alterar', edit_materia_path(@materia)
+'|
+= link_to 'Voltar', materias_path
