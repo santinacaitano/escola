@@ -1,0 +1,22 @@
+p#notice = notice
+
+p
+  strong Login:
+  = @usuario.login
+p
+  strong Nome:
+  = @usuario.nome
+p
+  strong Email :
+  = @usuario.email
+p
+  strong Perfil:
+  = @usuario.perfil
+p
+  strong Status:
+  = @usuario.status
+p
+
+= link_to 'Alterar', edit_usuario_path(@usuario)
+'|
+= link_to 'Voltar', usuarios_path
