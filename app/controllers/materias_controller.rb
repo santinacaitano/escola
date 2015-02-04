@@ -47,6 +47,6 @@ class MateriasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def materia_params
-      params.require(:materia).permit(:descricao, :professor, :curso)
+      params.require(:materia).permit(:descricao, :professor, :curso, :usuario_id)
     end
 end
